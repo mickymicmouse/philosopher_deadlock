@@ -1,0 +1,88 @@
+else if (first.equals("cd") && sec_fir == '/') {
+					File ab_dir = new File(new File(list.get(1)).getAbsolutePath());
+					File Move_dir = new File(ab_dir +"/"+list.get(1));
+						if(Move_dir.exists()) {
+						cur_dir = Move_dir;
+						pb.directory(cur_dir); 
+					
+						} else {
+							System.out.print("invalid file");
+					}
+				}
+
+
+
+	String first = list.get(0).toString();
+			String second = list.get(1).toString();
+			char sec_fir = second.charAt(0);
+			
+
+
+String new_adr = list.get(list.size()-1);
+				String up_adr = new_adr;
+				File new_file = new File(up_adr);
+				if(!new_file.exists()) {
+					System.out.println("err");
+					continue;
+				}
+
+				pb.directory(new_file);
+
+
+
+
+					
+			/*		else if () {
+
+				        String ab_path = new_dir.getAbsolutePath();
+				        File ab_dir = new File(ab_path);
+				        System.out.println(ab_dir);
+				        pb.directory(ab_dir);
+					}   */
+					
+					
+					
+					
+					/*String new_path = list.get(3).replaceAll("^\"|\"$", "");
+					Path p = Paths.get(new_path);
+					File go_dir;
+					if(p.isAbsolute()) {
+						go_dir = new File(new_path);}
+					else {
+		
+						go_dir = new File(cur_dir, new_path); }
+					if(!go_dir.exists() || !go_dir.isDirectory()) {
+						System.out.println("ERR");
+					}
+					else {
+						cur_dir = go_dir;
+					}
+				*/
+					
+					
+					
+					
+					
+				/*	if (f.exists()) {
+						System.out.println(String.valueOf(command[1]));
+						Path new_dir = Paths.get(f.getCanonicalPath());
+						if(!command[1].equals(path)) {
+							path = command[1].toString();
+							System.setProperty("user.dir", String.valueOf(path));
+							System.out.println(path);
+							pb.directory(f);
+							
+							
+							String new_d = new String(new_dir.toString());
+							File new_di = new File(new_d.toString());
+							pb.directory(new_di);
+						} else {
+							System.out.println("already");
+						}
+						
+					} 
+					else {
+						System.out.println("Doesn't exist");
+					}
+					*/
+					

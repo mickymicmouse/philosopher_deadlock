@@ -1,0 +1,36 @@
+	
+			try {
+
+			    // create ProcessBuilder object and execute external program
+				Process process = new ProcessBuilder(line).start();
+			   
+			    
+			    //obtain the inputStream
+			    InputStream is = process.getInputStream();
+				InputStreamReader isr = new InputStreamReader(is);
+				BufferedReader br = new BufferedReader(isr);
+			    // 외부 프로그램의 표준출력 상태 버퍼에 저장
+			
+				//read the output of the process
+				String exe;
+				while((exe = br.readLine())!= null)
+				System.out.println(exe);
+				
+			
+			} catch (IOException e) {
+			    e.printStackTrace();
+
+			}
+
+			
+			
+			try {
+				if(line.get(line.size()-1).equals("Mylist")) {
+					for(String s : Mylist)
+						System.out.println((index++) + " "+ s);
+					continue;
+				}
+			}finally {
+				
+			}
+			
